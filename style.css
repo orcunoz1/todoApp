@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-color: #023047;
+  color: #fff;
+  padding: 30px;
+}
+
+.container {
+  padding: 60px 0;
+  width: 1300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.title_container h1 {
+  font-size: 3rem;
+}
+
+.input_container {
+  display: flex;
+  gap: 10px;
+}
+
+.input_container .todo_input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.input_container .add_btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #fb8500;
+  transition: all 0.3s ease;
+}
+
+.input_container .add_btn:hover {
+  transform: scale(1.05);
+}
+
+.todo_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.todo_list li {
+  background-color: #fb8500;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
